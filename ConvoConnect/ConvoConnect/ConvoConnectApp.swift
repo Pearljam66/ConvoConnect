@@ -5,8 +5,8 @@
 //  Created by Sarah Clark on 7/9/24.
 //
 
-import SwiftUI
 import SwiftData
+import SwiftUI
 
 @main
 struct ConvoConnectApp: App {
