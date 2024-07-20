@@ -8,8 +8,10 @@
 import CallKit
 
 extension CXProvider {
-    static var `default`: CXProvider {
-        let configuration = CXProviderConfiguration.shared
-        return CXProvider(configuration: configuration)
+    static var custom : CXProvider {
+        @available(iOS, deprecated: 14.0)
+        let configuration = CXProviderConfiguration(localizedName: "Sarah.ConvoConnect")
+        let provider = CXProvider(configuration: configuration)
+        return provider
     }
 }
